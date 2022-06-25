@@ -16,7 +16,7 @@ class CreateStreet extends Component {
     }
 
     fetchData = () => {
-        fetch('https://spring-summer.herokuapp.com/api/v1/products')
+        fetch('https://assignment-jpa.herokuapp.com/api/v1/streets')
             .then(res => res.json())
             .then(res => {
                 
@@ -24,7 +24,7 @@ class CreateStreet extends Component {
     }
 
     submitForm = () => {
-        fetch('https://spring-summer.herokuapp.com/api/v1/products', {
+        fetch('https://assignment-jpa.herokuapp.com/api/v1/streets', {
             method: 'POST',
             body: JSON.stringify( {
                 name: this.state.name,
